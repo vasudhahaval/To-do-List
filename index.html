@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>To-Do List</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <input type="date" id="dateInput">
+  <input type="time" id="timeInput">
+
+  <select id="priorityInput">
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+  </select>
+
+  <button onclick="addTask()">Add Task</button>
+
+  <div class="filter">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('completed')">Done</button>
+    <button onclick="setFilter('pending')">Pending</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
